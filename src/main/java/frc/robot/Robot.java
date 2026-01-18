@@ -13,7 +13,8 @@ import edu.wpi.first.wpilibj2.command.CommandScheduler;
 @Logged
 public class Robot extends TimedRobot {
   // Here we create an instance of the (not explicitly) logged RobotContainer class, which contains
-  // an instance of another class marked as @Logged:
+  // an instance of another class (again not explicitly logged), which in turn contains an instance
+  // of a class marked as @Logged:
   private final RobotContainer m_robotContainer;
 
   public Robot() {
