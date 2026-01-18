@@ -4,12 +4,15 @@
 
 package frc.robot;
 
+import edu.wpi.first.epilogue.Logged;
+
+// @Logged <- Uncommenting this enables logging for the SomeLoggedClass class, which is weird.
 public class RobotContainer {
 
   // Notice that we don't put @Logged anywhere in this class. This seems to tell Epilogue to not log
   // anything here and to simply stop checking for logged files. Or at least that's the impression I
   // get.
-  private SomeLoggedClass snlc = new SomeLoggedClass();
+  private SomeLoggedClass someLoggedClass = new SomeLoggedClass();
 
   public RobotContainer() {}
 }
