@@ -4,7 +4,7 @@ import edu.wpi.first.epilogue.Logged;
 
 // We can mark the class as logged:
 @Logged
-public class SomeNotLoggedClass {
+public class SomeLoggedClass {
   // This field is not logged
   private int loggedInt = 34;
 
