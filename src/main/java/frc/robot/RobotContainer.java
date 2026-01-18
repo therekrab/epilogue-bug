@@ -4,21 +4,12 @@
 
 package frc.robot;
 
-import edu.wpi.first.epilogue.Logged;
-import edu.wpi.first.wpilibj2.command.Command;
-import edu.wpi.first.wpilibj2.command.Commands;
-
 public class RobotContainer {
 
+  // Notice that we don't put @Logged anywhere in this class. This seems to tell Epilogue to not log
+  // anything here and to simply stop checking for logged files. Or at least that's the impression I
+  // get.
   private SomeNotLoggedClass snlc = new SomeNotLoggedClass();
 
-  public RobotContainer() {
-    configureBindings();
-  }
-
-  private void configureBindings() {}
-
-  public Command getAutonomousCommand() {
-    return Commands.print("No autonomous command configured");
-  }
+  public RobotContainer() {}
 }
