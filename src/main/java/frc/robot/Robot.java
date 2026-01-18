@@ -21,6 +21,9 @@ public class Robot extends TimedRobot {
     m_robotContainer = new RobotContainer();
     // Ensure Epilogue is running
     Epilogue.bind(this);
+
+    // Make sure to actually use the class, so it has an instance.
+    System.out.println("A cool FRC team: " + MySingleton.getInstance().aCoolTeam);
   }
 
   @Override
